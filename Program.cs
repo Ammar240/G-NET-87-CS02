@@ -71,6 +71,12 @@ internal class Program
         #endregion
 
         #region question 7
+        int j = 1;
+        foreach (string book in books)
+        {
+            Console.WriteLine($"{j}. {book}");
+            j++;
+        }
 
         Console.WriteLine("==================");
         #endregion
