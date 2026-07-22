@@ -39,10 +39,10 @@ internal class Program
         #endregion
 
         #region question 4
-        string[] books = {"Clean code", "The Pragmatic Programmer", "Refactoring"};
-        for(int i=0; i< books.Length; i++)
+        string[] books = { "Clean code", "The Pragmatic Programmer", "Refactoring" };
+        for (int i = 0; i < books.Length; i++)
         {
-            Console.WriteLine($"{i+1}. {books[i]}");
+            Console.WriteLine($"{i + 1}. {books[i]}");
         }
 
         Console.WriteLine("==================");
@@ -50,9 +50,9 @@ internal class Program
 
         #region question 5
         int count = 0;
-        while(count < books.Length)
+        while (count < books.Length)
         {
-            Console.WriteLine($"{count+1}. {books[count]}");
+            Console.WriteLine($"{count + 1}. {books[count]}");
             count++;
         }
 
@@ -60,6 +60,12 @@ internal class Program
         #endregion
 
         #region question 6
+        int count2 = 0;
+        do
+        {
+            Console.WriteLine("Checking book...");
+            count2++;
+        } while (count2 < 3);
 
         Console.WriteLine("==================");
         #endregion
