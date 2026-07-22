@@ -39,7 +39,7 @@ internal class Program
         #endregion
 
         #region question 4
-        string[] books = { "Clean code", "The Pragmatic Programmer", "Refactoring" };
+        string[] books = { "Refactoring", "Clean code", "The Pragmatic Programmer" };
         for (int i = 0; i < books.Length; i++)
         {
             Console.WriteLine($"{i + 1}. {books[i]}");
@@ -82,6 +82,12 @@ internal class Program
         #endregion
 
         #region question 8
+        for (int i = 0; i < books.Length; i++)
+        {
+            Console.WriteLine($"{i + 1}. {books[i]}");
+            if (books[i].Equals("Refactoring"))
+                break;
+        }
 
         Console.WriteLine("==================");
         #endregion
