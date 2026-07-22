@@ -49,6 +49,12 @@ internal class Program
         #endregion
 
         #region question 5
+        int count = 0;
+        while(count < books.Length)
+        {
+            Console.WriteLine($"{count+1}. {books[count]}");
+            count++;
+        }
 
         Console.WriteLine("==================");
         #endregion
