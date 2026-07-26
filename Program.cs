@@ -26,9 +26,10 @@ internal class Program
         switch (title)
         {
             case "Clean code":
-            case "Nice pick!":
+                Console.WriteLine("Great Choice");
+                break;
             case "Refactoring":
-                Console.WriteLine("Great choice");
+                Console.WriteLine("Nice pick!");
                 break;
             default:
                 Console.WriteLine("Never heard of it");
@@ -84,9 +85,10 @@ internal class Program
         #region question 8
         for (int i = 0; i < books.Length; i++)
         {
-            Console.WriteLine($"{i + 1}. {books[i]}");
             if (books[i].Equals("Refactoring"))
                 break;
+            Console.WriteLine($"{i + 1}. {books[i]}");
+
         }
 
         Console.WriteLine("==================");
